@@ -3,12 +3,17 @@
 Console.WriteLine("Введите число");
 
 string number = Console.ReadLine();
+int parsed1 = int.Parse(number);
 
-if (number.Length < 3)
+if (parsed1 >= 100)
 {
-    Console.WriteLine("Третьей цифры нет!");
+    Console.WriteLine($"Третья цифра: {number[2]}");
+}
+else if (parsed1 <= -100)
+{
+    Console.WriteLine($"Третья цифра: {number[3]}");
 }
 else
 {
-    Console.WriteLine($"Третья цифра: {number[2]}");
+    Console.WriteLine("Третьей цифры нет");
 }
