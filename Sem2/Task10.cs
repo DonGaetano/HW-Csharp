@@ -9,10 +9,8 @@ if (number1 >= 100 && number1 <= 999)
     int number2 = number1 / 10;
     int number3 = number2 % 10;
     Console.WriteLine($"Вторая цифра - {number3}");
-
 }
 else
 {
     Console.WriteLine("Это число не трехзначное, идиот!");
-
 }
