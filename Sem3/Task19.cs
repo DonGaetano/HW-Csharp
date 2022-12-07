@@ -3,7 +3,7 @@
 Console.WriteLine("Введите пятизначное число");
 int number = int.Parse(Console.ReadLine()!);
 
-if (number >= 99999 || number < 10000)
+if (number > 99999 || number < 10000)
 {
     Console.WriteLine("Некорректный ввод");
 }
